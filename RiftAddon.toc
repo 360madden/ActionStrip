@@ -3,7 +3,7 @@ Name = "ActionStrip"
 Description = "Hello World test addon."
 Author = "Joey"
 Version = "0.1.0"
-Environment = "3.7"
+Environment = "4.4"
 
 RunOnStartup = {
     "ActionStrip.lua",

@@ -1,0 +1,11 @@
+Identifier = "ActionStrip"
+Name = "ActionStrip"
+Description = "Pixel telemetry bridge: player/target name, HP, resources, casting (8 color rows)."
+Author = "Joey"
+Email = "360madden@gmail.com"
+Version = "0.2.0"
+Environment = "4.4"
+
+RunOnStartup = {
+    "ActionStrip.lua",
+}

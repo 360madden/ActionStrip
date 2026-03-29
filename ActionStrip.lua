@@ -5,7 +5,7 @@ Command.Event.Attach(Event.Addon.Load.End, function(_, id)
 
     local context = UI.CreateContext(addonId .. "_Context")
     local frame = UI.CreateFrame("Frame", addonId .. "_Frame", context)
-    frame:SetWidth(200)
+    frame:SetWidth(380)
     frame:SetHeight(40)
     frame:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -350, -10)
     frame:SetBackgroundColor(0, 0, 0, 0.7)

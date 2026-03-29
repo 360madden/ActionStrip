@@ -1,8 +1,9 @@
 local addonId = "ActionStrip"
 
-Command.Event.Attach(Event.Addon.Load.End, function(context, id)
+Command.Event.Attach(Event.Addon.Load.End, function(_, id)
     if id ~= addonId then return end
 
+    local context = UI.CreateContext(addonId .. "_Context")
     local frame = UI.CreateFrame("Frame", addonId .. "_Frame", context)
     frame:SetWidth(200)
     frame:SetHeight(40)

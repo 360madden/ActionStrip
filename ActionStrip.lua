@@ -7,7 +7,7 @@ Command.Event.Attach(Event.Addon.Load.End, function(_, id)
     local frame = UI.CreateFrame("Frame", addonId .. "_Frame", context)
     frame:SetWidth(200)
     frame:SetHeight(40)
-    frame:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -220, -10)
+    frame:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -350, -10)
     frame:SetBackgroundColor(0, 0, 0, 0.7)
 
     local label = UI.CreateFrame("Text", addonId .. "_Label", frame)

@@ -1,8 +1,6 @@
 local addonId = "ActionStrip"
 
-local function Init(h, id)
+Command.Event.Attach(Event.Addon.Load.End, function(_, id)
     if id ~= addonId then return end
     print("Hello World")
-end
-
-table.insert(Event.Addon.Load.End, { Init, addonId, "Init" })
+end, addonId .. "_Load")

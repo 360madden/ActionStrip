@@ -1,6 +1,18 @@
 local addonId = "ActionStrip"
 
-Command.Event.Attach(Event.Addon.Load.End, function(_, id)
+Command.Event.Attach(Event.Addon.Load.End, function(context, id)
     if id ~= addonId then return end
-    print("Hello World")
+
+    local frame = UI.CreateFrame("Frame", addonId .. "_Frame", context)
+    frame:SetWidth(200)
+    frame:SetHeight(40)
+    frame:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -10, -10)
+    frame:SetBackgroundColor(0, 0, 0, 0.7)
+
+    local label = UI.CreateFrame("Text", addonId .. "_Label", frame)
+    label:SetText("ActionStrip")
+    label:SetFontSize(12)
+    label:SetPoint("CENTER", frame, "CENTER")
+
+    print("ActionStrip loaded.")
 end, addonId .. "_Load")

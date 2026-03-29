@@ -2,6 +2,7 @@ Identifier = "ActionStrip"
 Name = "ActionStrip"
 Description = "Hello World test addon."
 Author = "Joey"
+Email = "360madden@gmail.com"
 Version = "0.1.0"
 Environment = "4.4"
 
